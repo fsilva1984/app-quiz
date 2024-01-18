@@ -205,4 +205,16 @@ btn.addEventListener('click', e => {
   }
   animeScore(n);
 
+  
+  setTimeout(() => {
+
+    document.querySelectorAll('input')
+      .forEach(el => {
+        el.checked = false;
+      });
+
+    location.reload();
+  }, 6000);
+
+
 });
